@@ -117,4 +117,3 @@ function displayForecast(response) {
 // default city on load
 
 searchingCity("London");
-displayForecast();
