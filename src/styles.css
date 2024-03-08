@@ -125,8 +125,10 @@ main {
 }
 
 .weather-forecast-icon {
-  font-size: 32px;
-  text-align: center;
+  width: 88px;
+  height: 88px;
+  display: block;
+  margin: 0 auto;
 }
 
 .weather-forecast-date {
