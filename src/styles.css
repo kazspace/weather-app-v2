@@ -1,0 +1,145 @@
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(204, 228, 247) 11.2%,
+    rgb(237, 246, 250) 100.2%
+  );
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: #00bbf0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  border-bottom: 1px #bfcfff;
+  padding: 0 0 30px 0;
+}
+
+h1 {
+  font-family: "Gloria Hallelujah", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.content {
+  background: white;
+  max-width: 600px;
+  margin: 45px auto;
+  box-shadow: rgb(86, 255, 248);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 4px 6px 25px 0px rgba(0, 0, 0, 0.5);
+}
+
+.search-city-input {
+  background-color: #e4f1fe;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 16px;
+  padding: 15px 20px;
+  font-family: "Madimi One", sans-serif;
+}
+
+.submit-form-button {
+  padding: 15px 20px;
+  margin-left: 5px;
+  color: white;
+  border: 2px solid #0092ca;
+  border-radius: 5px;
+  color: #f8f8f8;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2),
+    0px -2px 2px rgba(255, 255, 255, 0.5) inset,
+    0 2px 2px rgba(255, 255, 255, 0.8) inset;
+  background: linear-gradient(#38598b, #007cb9);
+  text-shadow: 0 -2px #005689;
+  font-family: "Madimi One", sans-serif;
+}
+.submit-form-button:hover {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1),
+    0px -2px 2px rgba(255, 255, 255, 0.25) inset,
+    0 2px 2px rgba(255, 255, 255, 0.4) inset;
+  background: #0ebc0e;
+  background: linear-gradient(#0ebc0e, #0c960c);
+  border-color: #064f06;
+  cursor: pointer;
+}
+
+main {
+  padding: 30px 0;
+}
+
+.weather-container-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-city {
+  margin: 0;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.weather-city-info {
+  font-size: 16px;
+  color: #79c2d0;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.weather-city-info strong {
+  color: #5585b5;
+}
+
+.weather-current-container {
+  display: flex;
+}
+
+.weather-icon {
+  width: 88px;
+  height: 88px;
+}
+
+.weather-current-temp {
+  font-size: 80px;
+}
+
+.weather-unit {
+  margin-top: 16px;
+  font-size: 28px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+
+footer {
+  border-top: 1px #bfcfff;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}

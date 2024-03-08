@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App: Forecast</title>
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <form class="form-content" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            class="search-city-input"
+            id="search-city-input"
+            required
+          />
+          <input type="submit" value="Search" class="submit-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-container-data">
+          <div>
+            <h1 class="weather-city" id="weather-city"></h1>
+            <p class="weather-city-info">
+              <span id="time"></span>,
+              <span id="weather-description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind"></strong>
+            </p>
+          </div>
+
+          <div class="weather-current-container">
+            <div id="weather-icon"></div>
+            <div class="weather-current-temp" id="weather-current-temp"></div>
+            <div class="weather-unit">°C</div>
+          </div>
+        </div>
+
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">Thu</div>
+              <img
+                src="https://www.metoffice.gov.uk/webfiles/1709642715268/images/icons/weather/1.svg"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temp-max">15</span>
+                <span class="weather-forecast-temp-min">10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <p></p>
+      <footer>
+        Coded by
+        <a href="https://github.com/kazspace/" target="_blank">Kara Tsonos</a>,
+        is
+        <a href="https://github.com/kazspace/weather-app" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://graceful-weather.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+
+      <script src="src/app.js"></script>
+    </div>
+  </body>
+</html>
