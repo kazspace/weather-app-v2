@@ -122,6 +122,7 @@ main {
   text-align: center;
   display: flex;
   justify-content: space-around;
+  color: #005689;
 }
 
 .weather-forecast-icon {

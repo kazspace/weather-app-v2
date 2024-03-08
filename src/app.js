@@ -16,9 +16,14 @@ function refreshWeather(response) {
   let weatherIcon = document.querySelector("#weather-icon");
   weatherIcon.innerHTML = `<img src="${response.data.condition.icon_url}">`;
 
+  let feelsLikeElement = document.querySelector("#feels-like");
+  let feelsLike = response.data.temperature.feels_like;
+
+  feelsLikeElement.innerHTML = `${Math.round(feelsLike)}°C`;
+
   temperatureElement.innerHTML = Math.round(temperature);
 
-  mainCity.innerHTML = response.data.city;
+  mainCity.innerHTML = `${response.data.city}, ${response.data.country}`;
   description.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
