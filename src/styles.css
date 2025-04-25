@@ -123,6 +123,13 @@ main {
   display: flex;
   justify-content: space-around;
   color: #005689;
+  flex-wrap: wrap;
+}
+.weather-forecast > span {
+  /* Styles for each forecast item */
+  flex: 1; /* Distribute available space equally */
+  min-width: 100px; /* Ensure each item has a minimum width */
+  margin: 5px; /* Add some margin between items */
 }
 
 .weather-forecast-icon {
