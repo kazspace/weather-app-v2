@@ -179,7 +179,7 @@ footer {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 508px) {
   .form-content {
     flex-direction: column;
   }
