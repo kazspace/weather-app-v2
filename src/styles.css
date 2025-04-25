@@ -155,3 +155,38 @@ footer {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.5);
 }
+
+.form-content {
+  display: flex;
+  gap: 10px; /* Space between elements */
+  align-items: center; /* Vertically align items */
+}
+
+.search-city-input {
+  flex-grow: 1; /* Allows the input to take up available space */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-form-button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #007bff; /* Example color */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .form-content {
+    flex-direction: column;
+  }
+
+  .search-city-input,
+  .submit-form-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
